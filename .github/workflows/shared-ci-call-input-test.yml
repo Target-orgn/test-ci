@@ -17,7 +17,6 @@ jobs:
     - uses: actions/checkout@v4.1.0
       with:
         fetch-depth: 20
-        lfs: true
     - run: echo $shared_Pipeline_passed_var
     - run: echo $Shared_Pipeline_setting_var
   local_job:
@@ -30,7 +29,6 @@ jobs:
     - uses: actions/checkout@v4.1.0
       with:
         fetch-depth: 20
-        lfs: true
     - run: echo $shared_Pipeline_passed_var
     - run: echo $Shared_Pipeline_setting_var
     - run: echo $shared_Pipeline_call_passed_var
